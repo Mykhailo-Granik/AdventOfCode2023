@@ -1,9 +1,7 @@
 package main;
 
 
-import solutions.dec7.HandWithJokersParser;
-import solutions.dec7.RegularHandParser;
-import solutions.dec7.Solution;
+import solutions.dec8.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,7 +12,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new Solution(new HandWithJokersParser()).calculateTotalWinnings(readLinesFromFile()));
+        System.out.println(new Solution().findNumberOfSteps(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
