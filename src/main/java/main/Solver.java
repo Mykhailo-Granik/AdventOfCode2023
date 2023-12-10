@@ -1,8 +1,7 @@
 package main;
 
 
-import solutions.dec9.BeginningValuesExtrapolator;
-import solutions.dec9.Solution;
+import solutions.dec10.SolutionPart2;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,7 +12,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new Solution(new BeginningValuesExtrapolator()).findSumOfExtrapolatedValues(readLinesFromFile()));
+        System.out.println(new SolutionPart2().findNumberOfPointsInsideCycle(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
