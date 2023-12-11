@@ -1,7 +1,7 @@
 package main;
 
 
-import solutions.dec10.SolutionPart2;
+import solutions.dec11.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new SolutionPart2().findNumberOfPointsInsideCycle(readLinesFromFile()));
+        System.out.println(new Solution(1000000).calculateSumOfDistancesBetweenGalaxies(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
