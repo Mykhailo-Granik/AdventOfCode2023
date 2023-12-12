@@ -1,7 +1,8 @@
 package main;
 
 
-import solutions.dec11.Solution;
+import solutions.dec12.FiveTimesUnfolder;
+import solutions.dec12.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +13,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new Solution(1000000).calculateSumOfDistancesBetweenGalaxies(readLinesFromFile()));
+        System.out.println(new Solution(new FiveTimesUnfolder()).findSumOfPossibleArrangements(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
