@@ -1,8 +1,8 @@
 package main;
 
 
-import solutions.dec12.FiveTimesUnfolder;
-import solutions.dec12.Solution;
+import solutions.dec13.LandWithSmudgeSymmetryCalculator;
+import solutions.dec13.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new Solution(new FiveTimesUnfolder()).findSumOfPossibleArrangements(readLinesFromFile()));
+        System.out.println(new Solution(new LandWithSmudgeSymmetryCalculator()).sumOfScoresForEachLand(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
