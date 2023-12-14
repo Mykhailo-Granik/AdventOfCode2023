@@ -1,8 +1,7 @@
 package main;
 
 
-import solutions.dec13.LandWithSmudgeSymmetryCalculator;
-import solutions.dec13.Solution;
+import solutions.dec14.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,7 +12,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new Solution(new LandWithSmudgeSymmetryCalculator()).sumOfScoresForEachLand(readLinesFromFile()));
+        System.out.println(new Solution().calculateScore(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
