@@ -1,6 +1,7 @@
 package solutions.dec16;
 
 import org.junit.jupiter.api.Test;
+import solutions.dec17.Direction;
 
 import java.util.List;
 

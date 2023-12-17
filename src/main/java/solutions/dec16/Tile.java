@@ -2,7 +2,7 @@ package solutions.dec16;
 
 import java.util.List;
 
-import static solutions.dec16.Direction.*;
+import static solutions.dec17.Direction.*;
 
 public enum Tile implements BeamCollision {
 

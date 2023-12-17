@@ -1,5 +1,7 @@
 package solutions.dec16;
 
+import solutions.dec17.Direction;
+
 import java.util.Objects;
 
 public class Beam {
