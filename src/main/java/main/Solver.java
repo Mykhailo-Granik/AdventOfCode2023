@@ -1,9 +1,8 @@
 package main;
 
 
-import solutions.dec17.Solution;
-import solutions.dec17.UltraCrubiclesAllowedToStopPredicate;
-import solutions.dec17.UltraCrubiclesNextNodesGenerator;
+import solutions.dec18.HexaDecimalSegmentDescriptionParser;
+import solutions.dec18.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,12 +13,9 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        List<String> grid = readLinesFromFile();
-        Solution solution = new Solution(
-                new UltraCrubiclesNextNodesGenerator(grid.size(), grid.get(0).length()),
-                new UltraCrubiclesAllowedToStopPredicate()
+        System.out.println(
+                new Solution(new HexaDecimalSegmentDescriptionParser()).calculateNumberOfPointsInsidePolygon(readLinesFromFile())
         );
-        System.out.println(solution.calculateShortestPath(grid));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
