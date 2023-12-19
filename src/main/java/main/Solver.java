@@ -1,8 +1,7 @@
 package main;
 
 
-import solutions.dec18.HexaDecimalSegmentDescriptionParser;
-import solutions.dec18.Solution;
+import solutions.dec19.SolutionPart2;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,9 +12,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(
-                new Solution(new HexaDecimalSegmentDescriptionParser()).calculateNumberOfPointsInsidePolygon(readLinesFromFile())
-        );
+        System.out.println(new SolutionPart2().calculateTotalNumberOfPassingParts(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
