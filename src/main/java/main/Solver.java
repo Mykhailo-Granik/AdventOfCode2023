@@ -1,7 +1,7 @@
 package main;
 
 
-import solutions.dec20.Solution;
+import solutions.dec21.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(new Solution().calculateProductOfSignalOccurrences(readLinesFromFile()));
+        System.out.println(new Solution(64).numberOfReachableCells(readLinesFromFile()));
     }
 
     private static List<String> readLinesFromFile() throws FileNotFoundException {
