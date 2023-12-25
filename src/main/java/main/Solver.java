@@ -1,7 +1,7 @@
 package main;
 
 
-import solutions.dec24.Solution;
+import solutions.dec25.Solution;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,11 +13,7 @@ public class Solver {
 
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println(
-                new Solution().calculatePathsCollisions(
-                        readLinesFromFile(),
-                        200000000000000L,
-                        400000000000000L
-                )
+                new Solution().calculateNetworkScore(readLinesFromFile())
         );
     }
 
